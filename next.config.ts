@@ -1,16 +1,8 @@
-import type { NextConfig } from 'next';
-
-const nextConfig: NextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   experimental: {
-    ppr: true,
+    serverActions: true,
   },
-  images: {
-    remotePatterns: [
-      {
-        hostname: 'avatar.vercel.sh',
-      },
-    ],
-  },
-};
+}
 
-export default nextConfig;
+module.exports = nextConfig

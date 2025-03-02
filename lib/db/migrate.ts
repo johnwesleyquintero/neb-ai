@@ -7,12 +7,13 @@ config({
   path: '.env.local',
 });
 
-const runMigrate = async () => {
-  if (!process.env.POSTGRES_URL) {
+async function runMigrate() {
+  const postgresUrl = process.env.POSTGRES_URL;
+  if (!postgresUrl) {
     throw new Error('POSTGRES_URL is not defined');
   }
 
-  const connection = postgres(process.env.POSTGRES_URL, { max: 1 });
+  const connection = postgres(postgresUrl, { max: 1 });
   const db = drizzle(connection);
 
   console.log('⏳ Running migrations...');
@@ -23,10 +24,9 @@ const runMigrate = async () => {
 
   console.log('✅ Migrations completed in', end - start, 'ms');
   process.exit(0);
-};
+}
 
-runMigrate().catch((err) => {
-  console.error('❌ Migration failed');
-  console.error(err);
+runMigrate().catch((error) => {
+  console.error('Migration failed', error);
   process.exit(1);
 });

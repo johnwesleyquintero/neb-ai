@@ -1,61 +1,107 @@
-<a href="https://chat.vercel.ai/">
-  <img alt="Next.js 14 and App Router-ready AI chatbot." src="app/(chat)/opengraph-image.png">
-  <h1 align="center">Next.js AI Chatbot</h1>
-</a>
+# Project Nebula (neb.ai)
 
-<p align="center">
-  An Open-Source AI Chatbot Template Built With Next.js and the AI SDK by Vercel.
-</p>
+An AI-powered development environment that helps you build, iterate, and deploy web applications faster. Project Nebula combines the power of local AI models with cloud services to provide a seamless development experience.
 
-<p align="center">
-  <a href="#features"><strong>Features</strong></a> ·
-  <a href="#model-providers"><strong>Model Providers</strong></a> ·
-  <a href="#deploy-your-own"><strong>Deploy Your Own</strong></a> ·
-  <a href="#running-locally"><strong>Running locally</strong></a>
-</p>
-<br/>
+![Project Nebula](https://hebbkx1anhila5yf.public.blob.vercel-storage.com/android-chrome-192x192-cS8TGpAH9KoHUZtBhH14djtbsqpw5V.png)
 
 ## Features
 
-- [Next.js](https://nextjs.org) App Router
-  - Advanced routing for seamless navigation and performance
-  - React Server Components (RSCs) and Server Actions for server-side rendering and increased performance
-- [AI SDK](https://sdk.vercel.ai/docs)
-  - Unified API for generating text, structured objects, and tool calls with LLMs
-  - Hooks for building dynamic chat and generative user interfaces
-  - Supports OpenAI (default), Anthropic, Cohere, and other model providers
-- [shadcn/ui](https://ui.shadcn.com)
-  - Styling with [Tailwind CSS](https://tailwindcss.com)
-  - Component primitives from [Radix UI](https://radix-ui.com) for accessibility and flexibility
-- Data Persistence
-  - [Vercel Postgres powered by Neon](https://vercel.com/storage/postgres) for saving chat history and user data
-  - [Vercel Blob](https://vercel.com/storage/blob) for efficient file storage
-- [NextAuth.js](https://github.com/nextauthjs/next-auth)
-  - Simple and secure authentication
+- 🤖 **AI-Powered Development** - Generate code, get explanations, and receive suggestions using local AI models
+- 🚀 **Project Templates** - Quick start with templates for Next.js, Astro, and Expo
+- 📝 **Real-time Preview** - See your changes instantly with hot-reload support
+- 🔄 **Version Control** - Seamless GitHub integration
+- 📦 **One-Click Deploy** - Deploy directly to Vercel
+- 🎨 **Modern UI** - Built with Tailwind CSS and shadcn/ui components
+- 🔒 **Authentication** - GitHub authentication with Supabase
 
-## Model Providers
+## Prerequisites
 
-This template ships with OpenAI `gpt-4o` as the default. However, with the [AI SDK](https://sdk.vercel.ai/docs), you can switch LLM providers to [OpenAI](https://openai.com), [Anthropic](https://anthropic.com), [Cohere](https://cohere.com/), and [many more](https://sdk.vercel.ai/providers/ai-sdk-providers) with just a few lines of code.
+Before you begin, ensure you have installed:
 
-## Deploy Your Own
+- Node.js 18.x or later
+- Git
+- [Ollama](https://ollama.ai) for local AI features
+- [Supabase CLI](https://supabase.com/docs/guides/cli) (optional, for local development)
 
-You can deploy your own version of the Next.js AI Chatbot to Vercel with one click:
+## Environment Variables
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fai-chatbot&env=AUTH_SECRET,OPENAI_API_KEY&envDescription=Learn%20more%20about%20how%20to%20get%20the%20API%20Keys%20for%20the%20application&envLink=https%3A%2F%2Fgithub.com%2Fvercel%2Fai-chatbot%2Fblob%2Fmain%2F.env.example&demo-title=AI%20Chatbot&demo-description=An%20Open-Source%20AI%20Chatbot%20Template%20Built%20With%20Next.js%20and%20the%20AI%20SDK%20by%20Vercel.&demo-url=https%3A%2F%2Fchat.vercel.ai&stores=[{%22type%22:%22postgres%22},{%22type%22:%22blob%22}])
+Ensure you have the following environment variables set in your `.env` file:
 
-## Running locally
-
-You will need to use the environment variables [defined in `.env.example`](.env.example) to run Next.js AI Chatbot. It's recommended you use [Vercel Environment Variables](https://vercel.com/docs/projects/environment-variables) for this, but a `.env` file is all that is necessary.
-
-> Note: You should not commit your `.env` file or it will expose secrets that will allow others to control access to your various OpenAI and authentication provider accounts.
-
-1. Install Vercel CLI: `npm i -g vercel`
-2. Link local instance with Vercel and GitHub accounts (creates `.vercel` directory): `vercel link`
-3. Download your environment variables: `vercel env pull`
-
-```bash
-pnpm install
-pnpm dev
+```
+POSTGRES_URL=your_postgres_url_here
 ```
 
-Your app template should now be running on [localhost:3000](http://localhost:3000/).
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/johnwesleyquintero/neb-ai.git
+```
+
+# Nebula AI Project Documentation
+
+## Overview
+
+Nebula AI is a powerful AI model designed to interact with blockchain ecosystems, providing real-time access to onchain data and autonomous transaction capabilities. It is optimized for web3 developers and integrates seamlessly with popular AI orchestration frameworks.
+
+## Key Features
+
+### Blockchain Integration
+
+- **Real-Time Data Access:** Query live and historical blockchain data across various chains, contracts, and transactions with high accuracy.
+- **Autonomous Transactions:** Execute transactions autonomously or supervised using client wallets or provisioned backend wallets with session keys.
+- **Smart Contract Interaction:** Interact with smart contracts and perform transactions using natural language instructions.
+
+### AI Capabilities
+
+- **Natural Language API:** Instruct the AI using natural language via web3 APIs for understanding, analyzing, and executing transactions.
+- **Framework Compatibility:** Integrate with AI orchestration frameworks like LangChain, LlamaIndex, and AutoGPT for enhanced functionality.
+- **Customizable Execution:** Execute tasks autonomously or supervised, with support for various wallet configurations.
+
+### Use Cases
+
+- **AI Agents:** Build AI agents that can explain blockchain transactions, wallets, and smart contracts.
+- **Web3 Codegen:** AI assistants with code-editing capabilities to help develop blockchain apps and games.
+- **Blockchain Explorers:** Leverage AI to explain complex transactions in plain English.
+- **AI Trading Bots:** Automated trading agents that monitor and execute trades based on specific conditions.
+- **Contract Analyzers:** Analyze smart contract code and provide audit assistance.
+- **Wallet Assistants:** Help users track portfolios and suggest optimizations.
+- **Strategy Advisors:** Analyze yields and risks across DeFi protocols.
+- **AI NPCs:** Autonomous, AI-driven digital entities in games and virtual worlds.
+- **Autonomous Support Agents:** AI support agents trained on your codebase and documentation.
+
+## Getting Started
+
+### Access and Setup
+
+1. **Request Access:** Nebula AI is currently in private beta. To request access, fill out the sign-up form on the official website.
+2. **API Integration:** Once access is granted, integrate Nebula AI using the provided API documentation.
+3. **Playground:** Test the model without writing code using the Nebula Playground.
+
+### API Reference
+
+- **Endpoint:** `https://nebula-api.thirdweb.com/chat`
+- **Authentication:** Use the `X-Secret-Key` for authentication.
+- **Example Request:**
+
+  ```bash
+  curl "https://nebula-api.thirdweb.com/chat" \
+      -X POST \
+      -H "X-Secret-Key: $THIRDWEB_SECRET_KEY" \
+      -H "Content-Type: application/json" \
+      --data '{
+          "message": "What is the total supply of USDC on ethereum?",
+          "stream": "false"
+      }'
+  ```
+
+## Support and Resources
+
+- **Documentation:** Explore the Nebula API reference for detailed information on endpoints and usage.
+- **Tutorials:** Access video tutorials and templates to get started with Nebula AI.
+- **Supported Chains:** Nebula AI is supported on every EVM-compatible chain.
+
+## Conclusion
+
+Nebula AI offers a comprehensive solution for integrating AI with blockchain technology, enabling developers to build powerful, autonomous applications. For more information, visit the [Nebula AI website](https://thirdweb.com/nebula).
